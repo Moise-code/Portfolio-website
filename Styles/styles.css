@@ -1,5 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    vertical-align: middle;
+    color: #ffffff;
+    background-color: #3A3837;
+
+}
+.navigation > .material-symbols-outlined{
+   width: 10px;
+
+}
+.navigation >h3{
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: 700; */
+    font-size: 20px;
+    font-weight: 700;
+
+
 }
