@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Rasa&family=Roboto&display=swap');
 
 * {
   margin: 0;
@@ -96,7 +96,7 @@ a {
   display: grid;
   width: 100%;
   row-gap: 20px;
-  padding: 8rem 1rem 1rem 1rem;
+  padding: 8rem 1rem 8rem 1rem;
 }
 
 .recent-works {
@@ -230,4 +230,109 @@ a {
   letter-spacing: 1px;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
+}
+.aboutme{
+  background-color: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 1rem 8rem 1rem;
+}
+.about{
+display: flex;
+flex-direction: column;
+gap: 25px;
+border-bottom: 1px solid white;
+}
+.about > h6{
+  font-family: Crete Round;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 88px;
+  color: #ff6b00;
+  letter-spacing: 3px;
+  text-align: left;
+}
+.about >p{
+  font-family : 'Inter', sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  line-height: 28px;
+}
+.about > button{
+  width: 161px;
+  height: 48px;
+  color: white;
+  border: none;
+  background: #ff6b00;
+  font-size: 17px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+}
+.about > img{
+ width: 200px;
+ height: 300px;
+ position: relative;
+ left: 195px;
+ top: -20px;
+ overflow: hidden;
+}
+.categories{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 7rem 1rem 7rem 1rem;
+
+}
+.unodered{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.unodered >li{
+  display: flex;
+  list-style:none;
+  gap: 10px;
+  text-align: center;
+}
+
+#first-on-list{
+font-family:'Rasa', serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 44px;
+color: white;
+}
+
+#first-on-list > .rhombus{
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  transform: rotate(45deg);
+  margin-top:10px;
+}
+#first-on-list > .square{
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  margin-top:10px;
+}
+#first-on-list > .cico{
+  width: 18px;
+  height: 18px;
+  background: #ff6b00;
+  margin-top:10px;
+  border-radius: 50%;
+}
+.second-on-list{
+  color: white;
+  font-size: 22px;
+  padding: 0rem 2rem;
+  text-align: center;
+  gap: 20px;
+  font-family : 'Inter', sans-serif;
+  line-height: 40px;
 }
