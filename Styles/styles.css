@@ -1,30 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.navigation{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem;
-    vertical-align: middle;
-    color: #ffffff;
-    background-color: #3A3837;
 
+.navigation {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem;
+  vertical-align: middle;
+  color: #fff;
+  background-color: #3a3837;
 }
-.navigation > .material-symbols-outlined{
-   width: 10px;
 
+.navigation > .material-symbols-outlined {
+  width: 10px;
 }
-.navigation >h3{
-    font-family: 'Roboto', sans-serif;
-    /* font-weight: 700; */
-    font-size: 20px;
-    font-weight: 700;
 
+.navigation > h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
 
+.profile {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  column-gap: 6;
+  padding: 2rem;
+}
+
+.introduction > h1 {
+  color: #ff6b00;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 56px;
+  letter-spacing: 0.37px;
+  line-height: 64px;
+  font-weight: 400;
+  width: 327px;
+  height: 124px;
+  margin-top: 7.5rem;
+}
+
+.introduction > h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff;
+  margin-top: 0.8rem;
+}
+
+.introduction > p {
+  color: #fff;
+  width: 327;
+  height: 123px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0.8rem;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  width: 220px;
+}
+
+.social-media-icons > a {
+  width: 100px;
+  margin-bottom: 3.25rem;
+}
+
+.illustration {
+  position: absolute;
+  top: 38%;
+  left: 65%;
 }
