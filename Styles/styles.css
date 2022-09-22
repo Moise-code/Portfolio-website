@@ -5,6 +5,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+
+}
 
 .navigation {
   display: flex;
@@ -16,6 +19,7 @@
   vertical-align: middle;
   color: #fff;
   background-color: #3a3837;
+  width: 100%;
 }
 
 .navigation > .material-symbols-outlined {
