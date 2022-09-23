@@ -8,6 +8,7 @@
 
 body {
   box-sizing: border-box;
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -94,17 +95,9 @@ a {
 
 .illustration {
   position: absolute;
-
-  /* width: fit-content; */
   top: 38%;
   left: 63%;
   z-index: 1;
-
-  /* overflow-y: hidden; */
-
-  /* overflow-x: hidden;   */
-
-  /* box-sizing: content-box; */
 }
 
 .works {
