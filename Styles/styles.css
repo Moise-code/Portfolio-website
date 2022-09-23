@@ -6,10 +6,11 @@
   box-sizing: border-box;
 }
 
+html,
 body {
   box-sizing: border-box;
   width: 100%;
-  overflow-x: hidden;
+  background-color: white;
 }
 
 header {
@@ -23,7 +24,10 @@ header {
   color: #fff;
   background-color: #3a3837;
   width: 100%;
+  overflow: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 20;
 }
 
@@ -40,7 +44,22 @@ header > .logo {
   flex-direction: column;
   background-color: #1c1a19;
   column-gap: 6;
-  padding: 2rem;
+  padding: 12rem 2rem 1rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  background-image: url(/items/Illustration\ \(1\) .png);
+  background-size: 40%;
+  background-position-x: right;
+  background-position-y: 120%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  margin-bottom: 8rem;
+  margin-top: -40px;
+}
+
+.introduction {
+  margin-bottom: 1rem;
+  margin-top: -20px;
 }
 
 .introduction > h2 {
@@ -52,7 +71,8 @@ header > .logo {
   font-weight: 400;
   width: 327px;
   height: 124px;
-  margin-top: 13rem;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
 .introduction > h3 {
@@ -61,7 +81,7 @@ header > .logo {
   font-size: 24px;
   line-height: 32px;
   color: #fff;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
 }
 
 .introduction > p {
@@ -73,6 +93,7 @@ header > .logo {
   line-height: 24px;
   font-family: 'Poppins', sans-serif;
   margin-top: 0.8rem;
+  margin-bottom: 3rem;
 }
 
 .social-media-icons {
@@ -86,6 +107,7 @@ header > .logo {
 .social-media-icons > li {
   width: 100px;
   margin-bottom: 3.25rem;
+  margin-top: -3rem;
 }
 
 .social-media-icons > li,
@@ -93,265 +115,298 @@ a {
   list-style: none;
 }
 
-.illustration {
-  position: absolute;
-  top: 38%;
-  left: 63%;
-  z-index: 1;
-}
-
-.works {
-  display: grid;
-  width: 100%;
-  row-gap: 20px;
-  padding: 8rem 1rem 8rem 1rem;
-}
-
 .recent-works {
-  border-bottom: 1px solid black;
-  width: 91%;
-  margin-left: 15px;
-  height: 83px;
-  font-weight: 400;
+  font-family: 'Crete Round', sans-serif;
   font-size: 40px;
-  text-align: center;
-  font-family: 'Crete Round', sans-serif;
-}
-
-.card {
-  display: flex;
-  margin-bottom: 20px;
-  flex-direction: column;
-  padding: 1rem;
-  gap: 10px;
-}
-
-.card > p {
-  color: black;
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  height: 200px;
-  width: 350px;
-  line-height: 28px;
-}
-
-.card > button {
-  width: 170px;
-  padding: 20px 12px 20px 12px;
-  font-family: 'Inter', sans-serif;
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
-  background-color: #ff6b00;
-  border: none;
-  line-height: 24px;
   text-align: center;
-  letter-spacing: 1px;
+  padding: 0 0 2.5rem 0;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid black;
 }
 
-.technologies {
+.work {
+  width: 100%;
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 4rem;
 }
 
-.technologies > li {
-  list-style: none;
-  justify-content: space-around;
-  color: black;
-  border: 1px solid black;
-  padding: 1rem;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-family: 'Inter', sans-serif;
+.work-title {
+  margin: 0.6rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 40px;
+  border-bottom: 1px solid black;
 }
 
-.title {
-  color: #fff;
-  font-family: 'Crete Round', sans-serif;
-  font-size: 44px;
-  font-weight: 100;
+.grid {
+  display: grid;
 
-  /* line-height: 34px; */
+  /* grid-template-columns: 1fr; */
+  padding: 1.5rem;
+  gap: 30px;
 }
 
-.title-one {
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.work1 {
+  margin-bottom: 6rem;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.work1 > h5 {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
-}
-
-.card-2 {
-  display: flex;
-  margin-bottom: 20px;
-  flex-direction: column;
-  padding: 9rem 1rem 1rem 1rem;
-  gap: 10px;
-  background-image: url(/items/background-2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  fill: hwb(0 15% 85% / 0.184);
-}
-
-.card-2 > p {
-  color: white;
-  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  font-size: 22px;
-  height: 200px;
-  width: 330px;
-  line-height: 38px;
 }
 
-.technologies2 {
+.work1 > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+.work1 > .lists1 {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-}
-
-.technologies2 > li {
   list-style: none;
-  background: rgba(255, 255, 255, 0.24);
-  color: white;
+
+  /* padding: 1rem; */
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.lists1 > li {
   border: 1px solid black;
-  padding: 1rem;
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 20px;
-  font-family: 'Inter', sans-serif;
-  margin-right: 20px;
+  color: black;
+  padding: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
 }
 
-.card-2 > button {
-  margin-bottom: -15px;
-  margin-left: -15px;
-  margin-right: -15px;
-  border: none;
-  padding: 20px 12px 20px 12px;
+.work1 > button {
+  width: 200px;
   background-color: #ff6b00;
+  padding: 0.7rem;
   color: white;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  letter-spacing: 1px;
+  border: none;
   font-weight: bold;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
-.aboutme {
-  background-color: #1c1a19;
+.work2 {
+  margin-bottom: 3rem;
+  background-image: url(/items/background-2.png);
+  background-position: center;
+  background-size: cover;
+  height: 460px;
   display: flex;
   flex-direction: column;
-  padding: 8rem 1rem 8rem 1rem;
+  row-gap: 30px;
+  padding-top: 8rem;
+}
+
+.work2 > h5 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.work2 > p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  width: 300px;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.work2 > .lists {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  /* padding: 1rem; */
+  margin-left: 1rem;
+  column-gap: 10px;
+}
+
+.lists > li {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.24);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+}
+
+.work2 > button {
+  background-color: #ff6b00;
+  padding: 0.7rem;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
 }
 
 .about {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  background-color: #1c1a19;
+  row-gap: 5rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 4rem 1rem 2rem 1rem;
+  margin-bottom: 4rem;
   border-bottom: 1px solid white;
+  background-image: url(/items/Resume-png.png);
+  background-position-x: right;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
 }
 
-.about > h6 {
-  font-family: Crete Round, sans-serif;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 88px;
+.about-title {
   color: #ff6b00;
-  letter-spacing: 3px;
-  text-align: left;
+  font-size: 60px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
-.about > p {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
+.about-me > p {
+  font-size: 14px;
   color: white;
-  font-size: 16px;
-  text-align: left;
-  line-height: 28px;
+  line-height: 32px;
+  font-family: 'Poppins', sans-serif;
 }
 
-.about > button {
-  width: 161px;
-  height: 48px;
-  color: white;
+.about-me > button {
+  padding: 0.5rem;
+  font-size: 15px;
   border: none;
-  background: #ff6b00;
-  font-size: 17px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.9px;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6b00;
+  font-family: 'Poppins', sans-serif;
+  width: 140px;
+  margin-bottom: 8rem;
 }
 
-.about > img {
-  width: 200px;
-  height: 300px;
-  position: relative;
-  left: 195px;
-  top: -20px;
-  overflow: hidden;
-}
-
-.categories {
+.terms {
   display: flex;
   flex-direction: column;
+  row-gap: 1rem;
   align-items: center;
-  gap: 20px;
-  padding: 7rem 1rem 7rem 1rem;
-}
-
-.unodered {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.unodered > li {
-  display: flex;
-  list-style: none;
-  gap: 10px;
-  text-align: center;
-}
-
-#first-on-list {
-  font-family: 'Rasa', serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-family: 'Poppins', sans-serif;
   color: white;
+  padding-bottom: 3rem;
 }
 
-#first-on-list > .rhombus {
+.list11 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.list11 > span {
   width: 18px;
   height: 18px;
-  background: #ff6b00;
   transform: rotate(45deg);
-  margin-top: 10px;
+  background-color: #ff6b00;
 }
 
-#first-on-list > .square {
-  width: 18px;
-  height: 18px;
-  background: #ff6b00;
-  margin-top: 10px;
+.listo > li {
+  list-style: none;
 }
 
-#first-on-list > .cico {
-  width: 18px;
-  height: 18px;
-  background: #ff6b00;
-  margin-top: 10px;
-  border-radius: 50%;
-}
-
-.second-on-list {
-  color: white;
-  font-size: 22px;
-  padding: 0 2rem;
+.language {
   text-align: center;
-  gap: 20px;
-  font-family: 'Inter', sans-serif;
-  line-height: 40px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.frameworks {
+  text-align: center;
+}
+
+.square {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+}
+
+.circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50px;
+  background-color: #ff6b00;
+}
+
+.sketch1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sketch1 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.sketch1 > li {
+  list-style: none;
+}
+
+.sketch2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sketch2 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  transform: rotate(45deg);
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.sketch2 > li {
+  list-style: none;
+}
+
+.sketch3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sketch3 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  border-radius: 50px;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.sketch3 > li {
+  list-style: none;
 }
