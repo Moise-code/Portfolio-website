@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -18,6 +23,7 @@ header {
   background-color: #3a3837;
   width: 100%;
   position: fixed;
+  z-index: 20;
 }
 
 header > .logo {
@@ -88,8 +94,17 @@ a {
 
 .illustration {
   position: absolute;
+
+  /* width: fit-content; */
   top: 38%;
-  left: 65%;
+  left: 63%;
+  z-index: 1;
+
+  /* overflow-y: hidden; */
+
+  /* overflow-x: hidden;   */
+
+  /* box-sizing: content-box; */
 }
 
 .works {
