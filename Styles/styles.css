@@ -11,6 +11,7 @@ body {
   box-sizing: border-box;
   width: 100%;
   background-color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -24,14 +25,15 @@ header {
   color: #fff;
   background-color: #3a3837;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 20;
 }
 
-header > .logo {
+header > nav,
+.logo {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #fff;
@@ -47,7 +49,7 @@ header > .logo {
   padding: 12rem 2rem 1rem 2rem;
   width: 100%;
   overflow: hidden;
-  background-image: url(/items/illustra.png);
+  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/illustra.png");
   background-size: 40%;
   background-position-x: right;
   background-position-y: 120%;
@@ -140,7 +142,9 @@ a {
   padding-bottom: 1rem;
   text-align: center;
   font-size: 40px;
+  font-weight: lighter;
   border-bottom: 1px solid black;
+  font-family: 'Crete Round', sans-serif;
 }
 
 .grid {
@@ -172,8 +176,11 @@ a {
 }
 
 .work1 > p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: lighter;
 }
 
 .work1 > .lists1 {
@@ -190,24 +197,63 @@ a {
   border: 1px solid black;
   color: black;
   padding: 0.8rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: 300ms ease-in-out;
 }
 
-.work1 > button {
+.lists > li {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.24);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: 300ms ease-in-out;
+}
+
+.listo > li {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.sketch1 > li {
+  list-style: none;
+}
+
+.sketch2 > li {
+  list-style: none;
+}
+
+.sketch3 > li {
+  list-style: none;
+}
+
+.lists1 > li:hover {
+  color: #ff6b00;
+  border: 1px solid black;
+}
+
+.work1-button {
   width: 200px;
   background-color: #ff6b00;
   padding: 0.7rem;
   color: white;
   border: none;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  transition: 1s ease-in-out;
+}
+
+.work1-button:hover {
+  background-color: #fff5e1;
+  border: 2px solid #ff6b00;
+  color: #ff6b00;
 }
 
 .work2 {
   margin-bottom: 3rem;
-  background-image: url(/items/background-2.png);
+  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/background-2.png");
   background-position: center;
   background-size: cover;
   height: 460px;
@@ -226,8 +272,11 @@ a {
 }
 
 .work2 > p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: 24px;
   width: 300px;
   margin-left: 0.5rem;
   color: white;
@@ -243,22 +292,26 @@ a {
   column-gap: 10px;
 }
 
-.lists > li {
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.24);
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+.lists > li:hover {
+  background: rgba(255, 255, 255);
+  color: #ff6b00;
 }
 
-.work2 > button {
-  background-color: #ff6b00;
+.work2-button {
+  background-color: rgb(255, 107, 0);
   padding: 0.7rem;
   color: white;
   border: none;
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
   font-size: 20px;
+  transition: 300ms ease-in-out;
+}
+
+.work2-button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
 }
 
 .about {
@@ -275,7 +328,7 @@ a {
   padding: 4rem 1rem 2rem 1rem;
   margin-bottom: 4rem;
   border-bottom: 1px solid white;
-  background-image: url(/items/Resume-png.png);
+  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/Resume-png.png");
   background-position-x: right;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -283,28 +336,37 @@ a {
 
 .about-title {
   color: #ff6b00;
-  font-size: 60px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  font-family: 'Crete Round', sans-serif;
 }
 
 .about-me > p {
-  font-size: 14px;
+  font-size: 16px;
   color: white;
+  font-style: normal;
   line-height: 32px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .about-me > button {
   padding: 0.5rem;
-  font-size: 15px;
+  font-size: 19px;
   border: none;
   font-weight: bold;
   color: white;
   background-color: #ff6b00;
-  font-family: 'Poppins', sans-serif;
-  width: 140px;
+  font-family: 'Inter', sans-serif;
+  width: 170px;
   margin-bottom: 8rem;
+  transition: 300ms ease-in-out;
+}
+
+.about-me > button:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
+  width: 170px;
 }
 
 .terms {
@@ -312,14 +374,15 @@ a {
   flex-direction: column;
   row-gap: 1rem;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: white;
-  padding-bottom: 3rem;
+  padding-bottom: 8rem;
 }
 
 .list11 {
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 3rem;
 }
 
 .list11 > span {
@@ -327,10 +390,6 @@ a {
   height: 18px;
   transform: rotate(45deg);
   background-color: #ff6b00;
-}
-
-.listo > li {
-  list-style: none;
 }
 
 .language {
@@ -345,19 +404,6 @@ a {
   text-align: center;
 }
 
-.square {
-  width: 18px;
-  height: 18px;
-  background-color: #ff6b00;
-}
-
-.circle {
-  width: 18px;
-  height: 18px;
-  border-radius: 50px;
-  background-color: #ff6b00;
-}
-
 .sketch1 {
   display: flex;
   flex-direction: row;
@@ -369,10 +415,6 @@ a {
   background-color: #ff6b00;
   margin-top: 14px;
   margin-right: 10px;
-}
-
-.sketch1 > li {
-  list-style: none;
 }
 
 .sketch2 {
@@ -389,10 +431,6 @@ a {
   margin-right: 10px;
 }
 
-.sketch2 > li {
-  list-style: none;
-}
-
 .sketch3 {
   display: flex;
   flex-direction: row;
@@ -405,8 +443,4 @@ a {
   border-radius: 50px;
   margin-top: 14px;
   margin-right: 10px;
-}
-
-.sketch3 > li {
-  list-style: none;
 }
