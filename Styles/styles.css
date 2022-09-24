@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Poppins&family=Rasa&family=Roboto&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  overflow-x: hidden;
 }
 
 header {
@@ -17,10 +25,15 @@ header {
   color: #fff;
   background-color: #3a3837;
   width: 100%;
+  overflow-x: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 
-header > .logo {
+header > nav,
+.logo {
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   color: #fff;
@@ -33,7 +46,22 @@ header > .logo {
   flex-direction: column;
   background-color: #1c1a19;
   column-gap: 6;
-  padding: 2rem;
+  padding: 12rem 2rem 1rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/illustra.png");
+  background-size: 40%;
+  background-position-x: right;
+  background-position-y: 120%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  margin-bottom: 8rem;
+  margin-top: -40px;
+}
+
+.introduction {
+  margin-bottom: 1rem;
+  margin-top: -20px;
 }
 
 .introduction > h2 {
@@ -45,7 +73,8 @@ header > .logo {
   font-weight: 400;
   width: 327px;
   height: 124px;
-  margin-top: 13rem;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
 }
 
 .introduction > h3 {
@@ -54,7 +83,7 @@ header > .logo {
   font-size: 24px;
   line-height: 32px;
   color: #fff;
-  margin-top: 0.8rem;
+  margin-top: 0.4rem;
 }
 
 .introduction > p {
@@ -66,6 +95,7 @@ header > .logo {
   line-height: 24px;
   font-family: 'Poppins', sans-serif;
   margin-top: 0.8rem;
+  margin-bottom: 3rem;
 }
 
 .social-media-icons {
@@ -79,6 +109,7 @@ header > .logo {
 .social-media-icons > li {
   width: 100px;
   margin-bottom: 3.25rem;
+  margin-top: -3rem;
 }
 
 .social-media-icons > li,
@@ -86,8 +117,330 @@ a {
   list-style: none;
 }
 
-.illustration {
-  position: absolute;
-  top: 38%;
-  left: 65%;
+.recent-works {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding: 0 0 2.5rem 0;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.work {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.work-title {
+  margin: 0.6rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-size: 40px;
+  font-weight: lighter;
+  border-bottom: 1px solid black;
+  font-family: 'Crete Round', sans-serif;
+}
+
+.grid {
+  display: grid;
+
+  /* grid-template-columns: 1fr; */
+  padding: 1.5rem;
+  gap: 30px;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.work1 {
+  margin-bottom: 6rem;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.work1 > h5 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.work1 > p {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.work1 > .lists1 {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  /* padding: 1rem; */
+  justify-content: flex-start;
+  column-gap: 10px;
+}
+
+.lists1 > li {
+  border: 1px solid black;
+  color: black;
+  padding: 0.8rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: 300ms ease-in-out;
+}
+
+.lists > li {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.24);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: 300ms ease-in-out;
+}
+
+.listo > li {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.sketch1 > li {
+  list-style: none;
+}
+
+.sketch2 > li {
+  list-style: none;
+}
+
+.sketch3 > li {
+  list-style: none;
+}
+
+.lists1 > li:hover {
+  color: #ff6b00;
+  border: 1px solid black;
+}
+
+.work1-button {
+  width: 200px;
+  background-color: #ff6b00;
+  padding: 0.7rem;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  transition: 1s ease-in-out;
+}
+
+.work1-button:hover {
+  background-color: #fff5e1;
+  border: 2px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.work2 {
+  margin-bottom: 3rem;
+  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/background-2.png");
+  background-position: center;
+  background-size: cover;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  padding-top: 8rem;
+}
+
+.work2 > h5 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.work2 > p {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: lighter;
+  line-height: 24px;
+  width: 300px;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.work2 > .lists {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  /* padding: 1rem; */
+  margin-left: 1rem;
+  column-gap: 10px;
+}
+
+.lists > li:hover {
+  background: rgba(255, 255, 255);
+  color: #ff6b00;
+}
+
+.work2-button {
+  background-color: rgb(255, 107, 0);
+  padding: 0.7rem;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  transition: 300ms ease-in-out;
+}
+
+.work2-button:hover {
+  background-color: #fff5e1;
+  border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c1a19;
+  row-gap: 5rem;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 4rem 1rem 2rem 1rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid white;
+  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/Resume-png.png");
+  background-position-x: right;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+}
+
+.about-title {
+  color: #ff6b00;
+  font-size: 72px;
+  font-weight: 400;
+  font-family: 'Crete Round', sans-serif;
+}
+
+.about-me > p {
+  font-size: 16px;
+  color: white;
+  font-style: normal;
+  line-height: 32px;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-me > button {
+  padding: 0.5rem;
+  font-size: 19px;
+  border: none;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6b00;
+  font-family: 'Inter', sans-serif;
+  width: 170px;
+  margin-bottom: 8rem;
+  transition: 300ms ease-in-out;
+}
+
+.about-me > button:hover {
+  background-color: #fff5e1;
+  color: #ff6b00;
+  border: 2px solid #ff6b00;
+  width: 170px;
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  padding-bottom: 8rem;
+}
+
+.list11 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.list11 > span {
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  background-color: #ff6b00;
+}
+
+.language {
+  text-align: center;
+}
+
+.skills {
+  text-align: center;
+}
+
+.frameworks {
+  text-align: center;
+}
+
+.sketch1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sketch1 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.sketch2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sketch2 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  transform: rotate(45deg);
+  margin-top: 14px;
+  margin-right: 10px;
+}
+
+.sketch3 {
+  display: flex;
+  flex-direction: row;
+}
+
+.sketch3 > div {
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  border-radius: 50px;
+  margin-top: 14px;
+  margin-right: 10px;
 }
