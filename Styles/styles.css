@@ -480,7 +480,7 @@ footer {
   align-items: center;
 }
 
-footer h1 {
+footer h2 {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 32px;
@@ -528,7 +528,22 @@ footer form textarea {
   font-size: 15px;
   line-height: 24px;
 }
-footer
+footer form button{
+background: #FF6B00;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 24px;
+transition: 500ms ease-in-out;
+
+}
+footer form button:hover{
+background: #FFF5E1;
+border: 1px solid #F55800;
+color: #F55800;
+
+}
 
 hr {
   width: 100%;
