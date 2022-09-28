@@ -64,7 +64,21 @@ header > nav,
   margin-top: -20px;
 }
 
-.introduction > h2 {
+footer h2 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+  color: #172b4d;
+  padding: 1rem;
+  margin-top: 120px;
+  margin-bottom: 30px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.introduction h2 {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
   font-size: 56px;
@@ -365,17 +379,16 @@ footer ul li {
 }
 
 footer form button {
-  width: max-content;
-  padding: 12px;
-  margin-top: 24px;
   background: #ff6b00;
-  font-family: 'Inter', sans-serif;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-family: 'Inter'sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: white;
-  border: none;
+  transition: 500ms ease-in-out;
 }
 
 .about-me > button {
@@ -389,6 +402,12 @@ footer form button {
   width: 170px;
   margin-bottom: 8rem;
   transition: 300ms ease-in-out;
+}
+
+footer form button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
 }
 
 .about-me > button:hover {
@@ -480,20 +499,6 @@ footer {
   align-items: center;
 }
 
-footer h2 {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
-  padding: 1rem;
-  margin-top: 120px;
-  margin-bottom: 30px;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
 footer form {
   display: flex;
   flex-direction: column;
@@ -527,22 +532,6 @@ footer form textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-}
-footer form button{
-background: #FF6B00;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 17px;
-line-height: 24px;
-transition: 500ms ease-in-out;
-
-}
-footer form button:hover{
-background: #FFF5E1;
-border: 1px solid #F55800;
-color: #F55800;
-
 }
 
 hr {
