@@ -49,7 +49,7 @@ header > nav,
   padding: 12rem 2rem 1rem 2rem;
   width: 100%;
   overflow: hidden;
-  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/illustra.png");
+  background-image: url("../items/illustra.png");
   background-size: 40%;
   background-position-x: right;
   background-position-y: 120%;
@@ -104,17 +104,21 @@ header > nav,
   align-items: center;
   padding: 1rem;
   width: 220px;
+  list-style: none;
 }
+.profile ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  width: 220px;
+  list-style: none;
 
-.social-media-icons > li {
+}
+.profile ul li {
   width: 100px;
   margin-bottom: 3.25rem;
   margin-top: -3rem;
-}
-
-.social-media-icons > li,
-a {
-  list-style: none;
 }
 
 .recent-works {
@@ -184,7 +188,6 @@ a {
 }
 
 .work1 > .lists1 {
-  display: flex;
   flex-direction: row;
   list-style: none;
 
@@ -200,6 +203,8 @@ a {
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   transition: 300ms ease-in-out;
+  float: left;
+  margin-right: 10px;
 }
 
 .lists > li {
@@ -253,7 +258,7 @@ a {
 
 .work2 {
   margin-bottom: 3rem;
-  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/background-2.png");
+  background-image: url("../items/background-2.png");
   background-position: center;
   background-size: cover;
   height: 460px;
@@ -328,7 +333,7 @@ a {
   padding: 4rem 1rem 2rem 1rem;
   margin-bottom: 4rem;
   border-bottom: 1px solid white;
-  background-image: url("C:/Users/moise/OneDrive/Desktop/module1-microverse/Portfolio-website/items/Resume-png.png");
+  background-image: url("../items/Resume-png.png");
   background-position-x: right;
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -443,4 +448,19 @@ a {
   border-radius: 50px;
   margin-top: 14px;
   margin-right: 10px;
+}
+footer{
+  
+}
+footer h1{
+  
+}
+footer form{
+  
+}
+footer form input{
+  
+}
+footer form text{
+  
 }
