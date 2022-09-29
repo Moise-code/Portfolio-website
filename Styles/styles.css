@@ -77,7 +77,8 @@ footer h2 {
   margin-right: 24px;
 }
 
-.introduction h2 {
+
+.introduction .intro-first-part>h2 {
   color: #ff6b00;
   font-family: 'Crete Round', sans-serif;
   font-size: 56px;
@@ -90,7 +91,7 @@ footer h2 {
   margin-top: 4rem;
 }
 
-.introduction > h3 {
+.introduction .intro-first-part > h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -99,9 +100,9 @@ footer h2 {
   margin-top: 0.4rem;
 }
 
-.introduction > p {
+.introduction .intro-first-part > p {
   color: #fff;
-  width: 327;
+  width: 100%;
   height: 123px;
   font-size: 16px;
   font-weight: 400;
@@ -596,6 +597,62 @@ header .nav-lists a > span{
 header .nav-lists a > span:hover{
   color: #ff6b00;
 }
+.profile{
+  background-image: url("../items/Illustration-header.png");
+  background-size:38;
+  background-position-x: 100%;
+  background-position-y: 70%;
+  background-clip: border-box;
+  background-repeat: no-repeat;
+  margin-bottom: 8rem;
+  margin-top: -40px;
+
+}
+
+ 
+.introduction{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: -1.5rem;
+  margin-top: -4rem;
+
+  
+}
+.introduction .intro-first-part{
+  flex-direction: row-reverse;
+}
+.introduction ul{
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: -2em;
+  align-items: center;
+}
+.introduction .intro-first-part >h2{
+  font-size: 60px;
+  font-family: 'Crete Round'sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 62px;
+}
+.introduction .intro-first-part > h3{
+  font-family: 'Inter'sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+}
+.introduction .intro-first-part > p{
+  font-family: 'Inter'sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  width: 50%;
+  margin-bottom: 6em;
+}
+
 
 /* header.nav-lists .material-symbols-outlined{
   vertical-align: center;
