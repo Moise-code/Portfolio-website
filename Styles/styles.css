@@ -209,18 +209,22 @@ footer ul li {
 
 .work-title {
   margin: 0.6rem;
-  padding-bottom: 1rem;
+  padding-bottom: .9rem;
   text-align: center;
   font-size: 40px;
   font-weight: lighter;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   font-family: 'Crete Round', sans-serif;
 }
-
+.work-title hr{
+  margin-top: .9rem;
+  height: 2px;
+  background: black;
+}
 .grid {
   display: grid;
 
-  /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr;
   padding: 1.5rem;
   gap: 30px;
 }
@@ -289,7 +293,7 @@ footer ul li {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  padding-top: 5.8rem;
+  padding-top: 5.5m;
 }
 
 .work2 > h5 {
@@ -540,6 +544,8 @@ hr {
   color: #dfe1e6;
 }
 
+/* media querries for the desktop frame size */
+
 @media only screen and (min-width: 768px){
   
 header {
@@ -649,20 +655,70 @@ header .nav-lists a > span:hover{
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  width: 50%;
+  width: 60%;
+  height: 30%;
   margin-bottom: 6em;
 }
 
-
-/* header.nav-lists .material-symbols-outlined{
-  vertical-align: center;
-} */
+.work-title{
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 8rem 0rem 8rem;
+  justify-content: space-around;
 }
+.work-title h4{
+  font-family: 'Crete Round'sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  width:400px;
+  vertical-align: middle;
+  text-align: center;
+  align-items: center;
+  margin-top:-1rem ;
+}
+.work-title hr{
+  width: 794px;
+  vertical-align: middle;
+}
+.grid{
+  display: grid;
+  padding: 3rem 8rem 3rem 8rem;
+}
+.collection{
+  display: grid;
+  grid-template-columns: repeat(3,33.3%);
+}
+.work1{
+  grid-column-start:1;
+  grid-column-end: 6;
+}
+
+
+
+}
+/* these are the media querries for the device with size less than 768 px of width.*/
 @media only screen and (max-width: 768px){
   header .nav-lists{
     display: none;
   }
   .work2{
-    padding-top: 8.4rem;
+    padding-top: 3.3rem;
+  }
+    
+  .work-title {
+    margin: 0.6rem;
+    padding-bottom: .9rem;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    /* border-bottom: 1px solid black; */
+    font-family: 'Crete Round', sans-serif;
+  }
+  .work-title hr{
+    margin-top: .9rem;
+    height: 2px;
+    background: black;
   }
 }
