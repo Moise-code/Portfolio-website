@@ -285,6 +285,11 @@ hr {
   row-gap: 10px;
 }
 
+.work1-second-part {
+  display: grid;
+  gap: 15px;
+}
+
 .work1 h5 {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
@@ -554,7 +559,7 @@ footer form button:hover {
 
 /* media querries for the desktop frame size */
 
-@media only screen and (min-width: 768px) and (max-width: 1022px) {
+@media only screen and (min-width: 768px) {
   header {
     display: flex;
     align-items: center;
@@ -803,6 +808,7 @@ footer form button:hover {
     flex-direction: column;
     row-gap: 30px;
     padding-top: 1.5em;
+    justify-content: space-between;
   }
 
   .about {
@@ -875,52 +881,11 @@ footer form button:hover {
 }
 
 /* these are the media querries for the device with size less than 768 px of width. */
-@media only screen and (max-width: 768px) {
-  header .nav-lists {
-    display: none;
-  }
-
-  .work1 {
-    margin-bottom: 6rem;
-    height: 15%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-  }
-
-  .work1-button {
-    width: 200px;
-    background-color: #ff6b00;
-    padding: 0.7rem;
-    margin-top: 1rem;
-  }
-
-  .work2 {
-    width: 100%;
-    padding-top: 0;
-    margin-bottom: 3rem;
-    height: 50vh;
-  }
-
-  .work-title {
-    margin: 0.6rem;
-    padding-bottom: 0.9rem;
-    text-align: center;
-    font-size: 40px;
-    font-weight: lighter;
-
-    /* border-bottom: 1px solid black; */
-    font-family: 'Crete Round', sans-serif;
-  }
-
-  .work-title hr {
-    margin-top: 0.9rem;
-    height: 2px;
-    background: black;
-  }
+header .nav-lists {
+  display: none;
 }
 
-@media only screen and (min-width: 1022px) {
+@media only screen and (min-width: 1200px) {
   header {
     display: flex;
     align-items: center;
@@ -1161,14 +1126,11 @@ footer form button:hover {
   }
 
   .work2 {
-    margin-bottom: 0;
     background-image: url("../items/background-2.png");
     background-position: center;
-    height: 59vh;
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
-    padding-top: 1.5em;
+    row-gap: 20px;
   }
 
   .about {
