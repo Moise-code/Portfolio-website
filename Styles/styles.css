@@ -177,13 +177,14 @@ footer ul li {
 
 .lists1 > li {
   border: 1px solid black;
-  color: black;
+  color: #091e42;
   padding: 0.8rem;
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   transition: 300ms ease-in-out;
   float: left;
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .listo > li {
@@ -294,6 +295,7 @@ hr {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
   font-weight: 400;
+  color: #091e43;
 }
 
 .work1 .lists1 {
@@ -333,29 +335,44 @@ hr {
   flex-direction: column;
   row-gap: 30px;
   padding-top: 3rem;
+  transition: ease-in-out 1s;
 }
 
-.work2 > h5 {
-  font-family: 'Crete Round', sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  margin-left: 0.5rem;
-  color: white;
+#Work-two:hover {
+  background-image: url("../items/hover-image-two.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.work2 > .lists {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-
-  /* padding: 1rem; */
-  margin-left: 1rem;
-  column-gap: 10px;
+#work-one:hover {
+  background-image: url("../items/hover-image-one.png");
+  background-position: center;
+  background-size: cover;
 }
 
-.lists > li:hover {
-  background: rgba(255, 255, 255);
-  color: #ff6b00;
+#work-three:hover {
+  background-image: url("../items/hover-image-three.png");
+  background-position: center;
+  background-size: cover;
+  transition: 1s ease-in-out;
+}
+
+#work-four:hover {
+  background-image: url("../items/hover-image-one.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#work-five:hover {
+  background-image: url("../items/hover-image-two.png");
+  background-position: center;
+  background-size: cover;
+}
+
+#work-six:hover {
+  background-image: url("../items/hover-image-three.png");
+  background-position: center;
+  background-size: cover;
 }
 
 .work2-button {
@@ -372,6 +389,47 @@ hr {
 .work2-button:hover {
   background-color: #fff5e1;
   border: 1px solid #ff6b00;
+  color: #ff6b00;
+}
+
+.work2:hover .work2-button {
+  margin-top: 17.3rem;
+  transition: ease-in-out 0.5s;
+}
+
+.work2 > h5 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.work2:hover h5 {
+  display: none;
+  transition: ease-in-out 1s;
+}
+
+.work2:hover p {
+  display: none;
+}
+
+.work2:hover ul {
+  display: none;
+}
+
+.work2 > .lists {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  /* padding: 1rem; */
+  margin-left: 1rem;
+  column-gap: 10px;
+}
+
+.lists > li:hover {
+  background: rgba(255, 255, 255);
   color: #ff6b00;
 }
 
