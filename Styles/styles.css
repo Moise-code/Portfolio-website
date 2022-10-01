@@ -41,6 +41,10 @@ header > nav,
   text-decoration: none;
 }
 
+header > .nav-lists {
+  display: none;
+}
+
 .profile {
   display: flex;
   flex-direction: column;
@@ -176,7 +180,7 @@ footer ul li {
 }
 
 .lists1 > li {
-  border: 1px solid black;
+  border: 1px solid #8993a4;
   color: #091e42;
   padding: 0.8rem;
   font-family: 'Inter', sans-serif;
@@ -624,7 +628,7 @@ footer form button:hover {
     text-align: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 4rem 1rem 2rem;
     color: #fff;
     background-color: #3a3837;
     width: 100%;
@@ -648,7 +652,7 @@ footer form button:hover {
     display: none;
   }
 
-  header.nav-lists {
+  header .nav-lists {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -656,6 +660,7 @@ footer form button:hover {
 
   header .nav-lists,
   a {
+    display: inline;
     text-decoration: none;
     color: white;
     vertical-align: middle;
@@ -669,7 +674,7 @@ footer form button:hover {
     transition: 0.3s ease-in-out;
   }
 
-  .header .nav-list,
+  header .nav-list,
   a:hover {
     color: #ff6b00;
   }
@@ -939,9 +944,6 @@ footer form button:hover {
 }
 
 /* these are the media querries for the device with size less than 768 px of width. */
-header .nav-lists {
-  display: none;
-}
 
 @media only screen and (min-width: 1200px) {
   header {
@@ -970,18 +972,14 @@ header .nav-lists {
     line-height: 20px;
   }
 
-  header > .material-symbols-outlined {
-    display: none;
-  }
-
   header.nav-lists {
-    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
   }
 
   header .nav-lists,
   a {
+    display: inline;
     text-decoration: none;
     color: white;
     vertical-align: middle;
