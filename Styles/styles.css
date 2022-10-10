@@ -12,6 +12,7 @@ body {
   width: 100%;
   background-color: white;
   overflow-x: hidden;
+  /* overflow-y: hidden; */
 }
 
 header {
@@ -25,7 +26,7 @@ header {
   color: #fff;
   background-color: #3a3837;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   position: fixed;
   top: 0;
   left: 0;
@@ -41,9 +42,32 @@ header > nav,
   text-decoration: none;
 }
 
-header > .nav-lists {
-  display: none;
+.hamburger {
+  z-index: 30;
 }
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
 
 .profile {
   display: flex;
@@ -619,6 +643,57 @@ footer form button:hover {
   line-height: 24px;
 }
 
+/* media querries for the mobile menue */
+
+@media(max-width:768px){
+  .nav-lists {
+    /* display: none; */
+    display: fixed;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    /* margin: ; */
+    left: 0px;
+    /* left: -1000%; */
+    height: 100vh;
+    width: 100%;
+    background-color: #3c3a39;
+    /* background-color: blue; */
+    z-index: 29;
+    padding-top: 30%;
+    
+
+    /* padding-left: 4rem; */
+  }
+  
+  header .nav-lists,
+    a {
+      display: flex;
+      gap: 40px;
+      text-decoration: none;
+      color: white;
+      vertical-align: middle;
+      font-family: 'Inter', sans-serif;
+      text-align: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 20px;
+      transition: 0.3s ease-in-out;
+      
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: #6f6c6b solid 2px;
+    }
+
+    .nav-lists,
+    a:last-child{
+      display: none;
+    }
+  
+}
+
 /* media querries for the desktop frame size */
 
 @media only screen and (min-width: 768px) {
@@ -686,6 +761,10 @@ footer form button:hover {
 
   header .nav-lists a > span:hover {
     color: #ff6b00;
+  }
+
+  .hamburger {
+    display: none;
   }
 
   .profile {
