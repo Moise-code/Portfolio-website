@@ -647,26 +647,25 @@ footer form button:hover {
 
 @media(max-width:768px){
   .nav-lists {
-    /* display: none; */
     display: fixed;
     position: absolute;
     flex-direction: column;
     top: 0;
-    /* margin: ; */
-    left: 0px;
-    /* left: -1000%; */
+    left: -1000%;
+    /* left: 0px; */
     height: 100vh;
     width: 100%;
     background-color: #3c3a39;
-    /* background-color: blue; */
     z-index: 29;
     padding-top: 30%;
-    
+    transition: 0.3s;
+  }
 
-    /* padding-left: 4rem; */
+  .nav-lists.active{
+    left: 0;
   }
   
-  header .nav-lists,
+header .nav-lists,
     a {
       display: flex;
       gap: 40px;
@@ -690,6 +689,10 @@ footer form button:hover {
     .nav-lists,
     a:last-child{
       display: none;
+    }
+    header > a:nth-child(1){
+    border-bottom: none;
+    padding-bottom: 0;
     }
   
 }
