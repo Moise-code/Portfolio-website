@@ -12,6 +12,7 @@ body {
   width: 100%;
   background-color: white;
   overflow-x: hidden;
+
   /* overflow-y: hidden; */
 }
 
@@ -26,6 +27,7 @@ header {
   color: #fff;
   background-color: #3a3837;
   width: 100%;
+
   /* overflow-x: hidden; */
   position: fixed;
   top: 0;
@@ -67,7 +69,6 @@ header > nav,
 .hamburger.active .bar:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
-
 
 .profile {
   display: flex;
@@ -645,13 +646,14 @@ footer form button:hover {
 
 /* media querries for the mobile menue */
 
-@media(max-width:768px){
+@media (max-width: 768px) {
   .nav-lists {
     display: fixed;
     position: absolute;
     flex-direction: column;
     top: 0;
     left: -1000%;
+
     /* left: 0px; */
     height: 100vh;
     width: 100%;
@@ -661,40 +663,38 @@ footer form button:hover {
     transition: 0.3s;
   }
 
-  .nav-lists.active{
+  .nav-lists.active {
     left: 0;
   }
-  
-header .nav-lists,
-    a {
-      display: flex;
-      gap: 40px;
-      text-decoration: none;
-      color: white;
-      vertical-align: middle;
-      font-family: 'Inter', sans-serif;
-      text-align: center;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 2rem;
-      line-height: 20px;
-      transition: 0.3s ease-in-out;
-      
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-bottom: 1rem;
-      border-bottom: #6f6c6b solid 2px;
-    }
 
-    .nav-lists,
-    a:last-child{
-      display: none;
-    }
-    header > a:nth-child(1){
+  header .nav-lists,
+  a {
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 20px;
+    transition: 0.3s ease-in-out;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: #6f6c6b solid 2px;
+  }
+
+  header > a:nth-child(1) {
     border-bottom: none;
     padding-bottom: 0;
-    }
-  
+  }
+
+  .nav-lists a:last-child {
+    display: none;
+  }
 }
 
 /* media querries for the desktop frame size */
