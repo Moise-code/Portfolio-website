@@ -4,4 +4,10 @@ const navLists = document.querySelector('.nav-lists')
 hamburger.addEventListener('click',(e) => {
     hamburger.classList.toggle('active')
     navLists.classList.toggle('active')
+
 })
+
+document.querySelectorAll('.nav-link').forEach(nav => nav.addEventListener('click',(e)=> {
+    hamburger.classList.remove('active')
+    navLists.classList.remove('active')
+}))
