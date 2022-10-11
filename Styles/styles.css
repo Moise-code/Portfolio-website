@@ -643,8 +643,9 @@ footer form button:hover {
   font-size: 15px;
   line-height: 24px;
 }
+
  /* popup modal styles */
- .popup{
+.popup{
   display: flex;
   position: fixed;
   top: 0%;
@@ -655,18 +656,19 @@ footer form button:hover {
   padding: 20px 16px;
   justify-content: center;
   align-content: center;
-  /* margin:60px 20px ; */
-  /* background-color: white; */
-  opacity: 1;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
  }
+
 .popup-body{
   display: flex;
   flex-direction: column;
   gap:32px;
   background-color: white;
-  padding: 20px 10px;
+  padding: 20px 20px;
   height: 98%;
   width: 98%;
   
@@ -797,6 +799,10 @@ padding: 8px;
   transform: translateY(-8px) rotate(-45deg);
 }
 
+.show-popup {
+  opacity: 1;
+  visibility: visible;
+}
 
 
 
@@ -1180,82 +1186,21 @@ padding: 8px;
     align-self: flex-start;
   }
 
-  .popup{
-    display: flex;
-    position: fixed;
-    top: 0%;
+   .popup{
     height: 100vh;
     width: 100vw;
     z-index: 101;
     overflow: hidden;
     padding: 20px 16px;
-    justify-content: center;
-    align-content: center;
-    /* margin:60px 20px ; */
-    /* background-color: white; */
-    opacity: 1;
    }
+
   .popup-body{
-    display: flex;
-    flex-direction: column;
-    gap:32px;
-    background-color: white;
-    padding: 24px 24px;
+    padding: 30px 24px;
     height: 90%;
     width: 80%;
     margin-top:4rem
   }
-  .pop-title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height:5%;
-  }
-  .pop-title h2{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 44px;
-    color: #172B4D;;
-  }
-  .popup-hamburger{
-    z-index: 130;
-  
-  }
-  .bar1 {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #67798E;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-  .texhnologies{
-    height: 10%;
-  }
-  .technologies ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-  
-    /* padding: 1rem; */
-    justify-content: flex-start;
-    column-gap: 10px;
-  
-  }
-  .technologies ul li{
-    border: 1px solid #8993a4;
-    color: #091e42;
-    padding: 0.8rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 13px;
-    transition: 300ms ease-in-out;
-    float: left;
-    margin-right: 10px;
-    font-weight: bold;
-  }
+
   .popup-content{
     display: flex;
     flex-direction: row;
@@ -1317,23 +1262,7 @@ padding: 8px;
   
   
   }
-  .popup-content-buttona button span{
-    margin: 8px 4px 0px 4px;
-  
-  }
-  
-  .popup-hamburger .bar1:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .popup-hamburger .bar1:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  
-  .popup-hamburger .bar1:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
+
 }
 
 /* these are the media querries for the device with size less than 768 px of width. */
