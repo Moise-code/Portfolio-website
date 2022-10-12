@@ -660,9 +660,10 @@ hr {
   margin-bottom: 8rem;
   transition: 300ms ease-in-out;
 }
-.error-msg{
+
+.error-msg {
   color: red;
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1273,7 +1274,7 @@ footer form button:hover {
     color: #fff;
     padding: 8px;
   }
- 
+
   .contact-form form button {
     align-self: flex-start;
   }
