@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Professional Art Printing Data",
+        "description": "A daily selection of privetly personalized reads no accounts or sign-ups required has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a .",
+        "image": "./items/hover-image-two.png",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "live-link": "#",
+        "source-link": "#",
+        "id": "work-one"
+        
+    },
+    {
+        "name": "Professional Art Printing Data",
+        "description": "A daily selection of privetly personalized reads no accounts or sign-ups required has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a .",
+        "image": "./items/hover-image-one.png",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "live-link": "#",
+        "source-link": "#",
+        "id": "work-two"
+    },
+    {
+        "name": "Professional Art Printing Data",
+        "description": "A daily selection of privetly personalized reads no accounts or sign-ups required has been the industry's standard dummy text ever since the 1500s, when an .",
+        "image": "./items/hover-image-three.png",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "live-link": "#",
+        "source-link": "#",
+        "id": "work-three"
+    },
+    {
+        "name": "Professional Art Printing Data",
+        "description": "A daily selection of privetly personalized een the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+        "image": "./items/hover-image-three.png",
+        "technologies": ["Html", "Bootstrap", "Ruby"],
+        "live-link": "#",
+        "source-link": "#",
+        "id": "work-four"
+    },
+    {
+        "name": "Professional Art Printing Data",
+        "description": "A daily selection of privetly personalized een the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+        "image": "./items/hover-image-one.png",
+        "technologies": ["Css", "Bootstrap", "Ruby"],
+        "live-link": "#",
+        "source-link": "#",
+        "id": "work-five"
+    },
+    {
+        "name": "Professional Art Printing Data",
+        "description": "A daily selection of privetly personalized een the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+        "image": "./items/hover-image-one.png",
+        "technologies": ["Rail", "Bootstrap", "Ruby"],
+        "live-link": "#",
+        "source-link": "#",
+        "id": "work-five"
+    }
+]
