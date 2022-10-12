@@ -661,6 +661,15 @@ hr {
   transition: 300ms ease-in-out;
 }
 
+.error-msg {
+  color: red;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .contact-form form button {
   background: #ff6b00;
   color: white;
