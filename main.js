@@ -77,7 +77,7 @@ const displayProjectDetail = ({
 };
 
 const getProjects = async () => {
-  const response = await fetch('./projects.json');
+  const response = await fetch('../projects.json');
 
   try {
     const data = await response.json();
@@ -91,7 +91,7 @@ const getProjects = async () => {
 };
 
 const addhumburgerEvent = () => {
-  document.querySelector('.popup-hamburger').addEventListener('click', () => {
+  document.querySelector('.popup-hamburger').addEventListener('change', () => {
     popupModal.classList.remove('show-popup');
     popupModal.innerHTML = '';
   });
